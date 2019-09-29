@@ -6,7 +6,7 @@ Files included within this project
 
 reconstruct_table.py
 	Script to reconstruct a lookup table of the ACAS XU system. The script 
-	creates data samples by first building a neural network using the weights 
+	creates data samples by interpreting a neural network using the weights 
 	provided by an nnet file. The second step is firing input samples through  
 	the neural network to obtain the labels. (See the FAQ for more details)  
 	The script returns the data as csv file (within a folder tables).   
@@ -95,19 +95,8 @@ these scripts.
 The input samples fired into the neural network are uniformly random sampled. 
 This is not the case for the data by Julien et al. However, again because of
 licensing issues this probability distribution was not accessible 
-[as of Jan 14,2019] and uniform random sampling is used as a backup.
+[as of July 22,2019] and uniform random sampling is used as a backup.
 
-# Where do I find the properties/specifications for the neural networks
-represented in this data set? 
-
-The properties on the ACAS XU networks are specified in the technical report  
-on Guy Katz's CAV paper [6] Appendix VI. Take for instance Property \phi_2,   
-
-"If the intruder is distant and is significantly slower than the ownship, the 
-score of a COC advisory will never be maximal."
-
-which was tested on all networks N_{x,y} for x >= 2 and for all y represented  
-by the files nnet/ACASXU_run2a_x_y_batch_2000.nnet. 
 
 # Which papers do I need to cite when I use these scripts?
 
