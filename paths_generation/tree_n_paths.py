@@ -1,3 +1,4 @@
+# This file trains a decision tree based on the corresponding CSV file, extracts and stores paths of that decision tree into a text file.
 # before running this file, data should be extracted as csv file and be stored under ../data_generation/tables/name.csv
 
 import pandas as pd
